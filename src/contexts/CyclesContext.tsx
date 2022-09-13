@@ -26,7 +26,7 @@ interface CycleContextType {
 }
 
 export const CyclesContext = createContext({} as CycleContextType)
- 
+
 interface CyclesContextProviderProps {
   children: ReactNode
 }
@@ -68,7 +68,6 @@ export function CyclesContextProvider({
     setCycles((state) => [...state, newCycle])
     setActiveCycleId(id)
     setAmountSecondsPassed(0)
-    // reset()
   }
 
   function interruptCurrentCycle() {
